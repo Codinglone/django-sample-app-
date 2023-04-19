@@ -1,0 +1,16 @@
+ {% extends 'main/base.html' %} 
+
+ {% block text %}
+    Shoes Store
+ {% endblock %}
+
+ {% block title %}
+    Homepage
+ {% endblock %}
+
+ {% block content %}
+    {% for shoe in shoes %}
+        <h1>Product name: {{shoe.name}}</h1> 
+        <h2>Price: {{shoe.price}}</h2>
+    {% endfor %} 
+ {% endblock %}
